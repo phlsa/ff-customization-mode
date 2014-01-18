@@ -1,0 +1,94 @@
+.window {
+  position: relative;
+  width: 1039px;
+  height: 726px;
+  background-image: url('../img/window.png');
+  background-size: 100%;
+}
+
+.content {
+  position: absolute;
+  left: 58px;
+  top: 112px;
+  width: 925px;
+  height: 535px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.panel {
+  float: right;
+  width: 260px;
+  height: 330px;
+  background-color: #eee;
+  border: 1px solid #999;
+  position: absolute;
+  right: 0px;
+  top: 110px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.customize .panel {
+  transform: translate(-75px, 30px);
+  animation: grow 0.3s ease;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  from {
+    height: 330px;
+  }
+  to {
+    height: 460px;
+  }
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url('../img/bluprint.png');
+  /*opacity: 0;*/
+  transform: translate(300px, 0);
+  transition: all 0.3s ease;
+}
+
+.customize .sidebar {
+  /*opacity: 1;*/
+  transform: none;
+}
+
+.button {
+  float: left;
+  width: 27.5px;
+  height: 26.5px;
+  background-image: url('../img/home.png');
+  background-size: 100%;
+  margin: 20px 30px;
+  transform: scale(0.2);
+  opacity: 0;
+  transition: all .3s cubic-bezier(.6, 2, .75, 1.5);
+}
+
+.customize .button {
+  opacity: 1;
+  transform: none;
+}
+
+h1 {
+  color: #688096;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.customize h1 {
+  opacity: 1;
+}
