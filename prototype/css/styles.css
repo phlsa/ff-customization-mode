@@ -26,22 +26,38 @@
   right: 0px;
   top: 110px;
   z-index: 10;
-  transition: all 0.3s ease;
+  /*transition: all 0.3s ease;*/
 }
 
 .customize .panel {
-  transform: translate(-75px, 30px);
-  animation: grow 0.3s ease;
-  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.sidebar .panel {
+  opacity: 1;
+  left: 20px;
+  top: 20px;
+  height: 460px;
+  transform-origin: 80% 0;
+}
+
+.customize .sidebar .panel {
+  animation: radial-bounce 0.8s ease-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes grow {
-  from {
-    height: 330px;
+@keyframes radial-bounce {
+  0% {
+    transform: rotate(-10deg);
   }
-  to {
-    height: 460px;
+  40% {
+    transform: rotate(10deg);
+  }
+  73% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
