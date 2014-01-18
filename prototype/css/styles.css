@@ -163,5 +163,17 @@ h1 {
 }
 
 .wip {
-  color: #ff8902;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #ff8902;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.wip span {
+  margin: 5px;
+  display: inline-block;
 }
