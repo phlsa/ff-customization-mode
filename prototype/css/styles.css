@@ -161,3 +161,7 @@ h1 {
   background-image: url('../img/search-bar.png');
   background-size: 100%;
 }
+
+.wip {
+  color: #ff8902;
+}
