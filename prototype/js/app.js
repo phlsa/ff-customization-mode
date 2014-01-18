@@ -1,4 +1,10 @@
-$('.panel').click(function(e) {
+$('.window>.panel').click(function(e) {
+	$('.customization-view').removeClass('soft-hide');
+	$('.window').toggleClass('customize');
+});
+
+$('.sidebar .panel').on('click', function(e) {
+	$('.customization-view').addClass('soft-hide');
 	$('.window').toggleClass('customize');
 });
 
