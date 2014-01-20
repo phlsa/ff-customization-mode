@@ -74,7 +74,8 @@
     transform: rotate(7deg);
   }
   65% {
-    transform: rotate(-2deg);
+    transform: rotate(-2.3deg);
+    animation-timing-function: ease-out;
   }
   100% {
     transform: rotate(0deg);
