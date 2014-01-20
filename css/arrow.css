@@ -1,0 +1,30 @@
+.arrow-box {
+  /*position: relative;
+  background: #f4f4f4;
+  border: 1px solid #bbb;*/
+}
+
+.arrow-box:after, .arrow-box:before {
+  bottom: 100%;
+  right: 30px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-box:after {
+  border-color: rgba(244, 244, 244, 0);
+  border-bottom-color: #f4f4f4;
+  border-width: 16px;
+  margin-left: -16px;
+}
+
+.arrow-box:before {
+  border-color: rgba(187, 187, 187, 0);
+  border-bottom-color: #bbb;
+  border-width: 17px;
+  margin-left: -17px;
+}

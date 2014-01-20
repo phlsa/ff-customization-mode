@@ -27,17 +27,25 @@
 }
 
 .panel {
-  float: right;
+  /*float: right;*/
   width: 260px;
   height: 330px;
-  background-color: #eee;
-  border: 1px solid #999;
+  background-color: #f4f4f4;
+  border: 1px solid #bbb;
   position: absolute;
-  right: 0px;
-  top: 110px;
+  right: 28px;
+  top: 118px;
   z-index: 10;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
   /*transition: all 0.3s ease;*/
 }
+.panel > img {
+  width: 236px;
+  height: auto;
+  margin: 5px 0 0 10px;
+}
+
 
 .customize .panel {
   opacity: 0;
@@ -46,9 +54,9 @@
 .sidebar .panel {
   opacity: 1;
   left: 20px;
-  top: 20px;
+  top: 30px;
   height: 460px;
-  transform-origin: 80% 0;
+  transform-origin: 80% -10px;
 }
 
 .customize .sidebar .panel {
