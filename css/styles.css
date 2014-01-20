@@ -9,6 +9,9 @@ body {
   background-image: url('../img/window.png');
   background-size: 100%;
 }
+.window.customize {
+  background-image: url('../img/window-customize.png');
+}
 
 .content, .site {
   position: absolute;
