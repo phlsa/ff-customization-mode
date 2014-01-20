@@ -206,6 +206,13 @@ h1 {
   transform: none;
 }
 
+.button-label {
+  font-size: 12px;
+  position: relative;
+  top: 30px;
+  left: -4px;
+}
+
 .toolbar {
   position: absolute;
   top: 74px;
