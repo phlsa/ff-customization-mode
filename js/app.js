@@ -1,9 +1,9 @@
-$('.window>.panel').click(function(e) {
+$('.window>.panel .customize-button').click(function(e) {
 	$('.customization-view').removeClass('soft-hide');
 	$('.window').toggleClass('customize');
 });
 
-$('.sidebar .panel').on('click', function(e) {
+$('.sidebar .customize-button').on('click', function(e) {
 	$('.customization-view').addClass('soft-hide');
 	$('.window').toggleClass('customize');
 });
