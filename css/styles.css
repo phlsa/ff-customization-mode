@@ -142,7 +142,7 @@ span.sprite {
     transform: rotate(7deg);
   }
   65% {
-    transform: rotate(-2.3deg);
+    transform: rotate(-2.1deg);
     animation-timing-function: ease-out;
   }
   100% {
